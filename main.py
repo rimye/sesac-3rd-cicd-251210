@@ -56,6 +56,7 @@ def create_todo(data:CreateTodoSchema):
     return new_data
 
 
+
 #read
 @app.get("/read",status_code = 200)
 def read_data(id:str):
