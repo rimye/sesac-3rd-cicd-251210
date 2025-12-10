@@ -25,4 +25,4 @@ jobs:
           file : ./Dockerfile
           push : true
           tags : |
-            ${{ secerets.DOCKERHUB_USERNAME}}/todo_app:latest
+            ${{ secrets.DOCKERHUB_USERNAME}}/todo_app:latest
