@@ -60,6 +60,8 @@ def create_todo(data:CreateTodoSchema):
 #read
 @app.get("/read",status_code = 200)
 def read_data(id:str):
+    """test"""
+    
     cursor.execute("""
         SELECT * FROM todos
         WHERE id = %s
